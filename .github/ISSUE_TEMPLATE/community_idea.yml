@@ -1,0 +1,31 @@
+name: Community idea
+description: Propose an Open Lab experiment, tool, example, or collaboration
+title: "[idea] "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What public problem should the Open Lab explore?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed direction
+      description: Describe the smallest useful experiment or deliverable.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or references
+      description: Links, examples, tests, or prior work that help evaluate the idea.
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Boundary
+      options:
+        - label: This proposal does not require private Core access, production secrets, customer data, or paid infrastructure.
+          required: true
